@@ -125,10 +125,6 @@ Test coverage includes:
 3. Let Gradle sync (requires internet for dependency resolution)
 4. Run on an emulator/device with API 29+
 
-> **Note on dependency versions**: This project targets AGP 9.2.1 / Kotlin 2.2.10. If the KSP version
-> (`2.2.10-1.0.32` in `libs.versions.toml`) is not published yet, update it to the latest available
-> for your Kotlin version. Check: https://github.com/google/ksp/releases
-
 ---
 
 ## Sample Data
@@ -136,7 +132,3 @@ Test coverage includes:
 The app starts empty. Use the **+** FAB on Dashboard or History to add expenses. To see analytics with rich charts, add 5–10 expenses across different categories and dates.
 
 ---
-
-## License
-
-MIT
