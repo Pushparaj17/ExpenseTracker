@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="history">History</string>
+    <string name="analytics">Analytics</string>
+    <string name="add_expense">Add Expense</string>
+    <string name="edit_expense">Edit Expense</string>
+    <string name="no_expenses">No expenses yet</string>
+    <string name="budget_alert_channel">Budget Alerts</string>
+</resources>

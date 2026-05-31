@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_background">#2E7D32</color>
+    <color name="green_primary">#2E7D32</color>
+    <color name="green_light">#66BB6A</color>
+    <color name="teal_secondary">#00695C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
