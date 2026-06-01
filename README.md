@@ -17,7 +17,7 @@ A full-featured personal finance app built with **Kotlin**, **Jetpack Compose**,
 | Navigation | Navigation Compose |
 | State | StateFlow + collectAsStateWithLifecycle |
 | Storage | DataStore Preferences |
-| Testing | JUnit4, MockK, Turbine, Room Testing |
+| Testing | JUnit4, MockK, Turbine |
 
 ---
 
@@ -114,7 +114,6 @@ UI (Compose) ←→ ViewModel ←→ Repository ←→ Room DAO ←→ SQLite
 Test coverage includes:
 - `ExpenseViewModelTest` — 10 unit tests (MockK + Turbine)
 - `ExpenseRepositoryTest` — 8 unit tests (MockK)
-- `ExpenseDaoTest` — 10 instrumented tests (in-memory Room)
 
 ---
 
