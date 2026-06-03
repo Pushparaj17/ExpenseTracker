@@ -22,8 +22,11 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.push.dev.expensetracker.data.model.Category
 import com.push.dev.expensetracker.viewmodel.ExpenseViewModel
+import java.time.Instant
 import java.time.LocalDate
+import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -267,8 +270,8 @@ private fun ExpenseDatePickerDialog(
         confirmButton = {
             TextButton(onClick = {
                 datePickerState.selectedDateMillis?.let { millis ->
-                    val date = java.time.Instant.ofEpochMilli(millis)
-                        .atZone(java.time.ZoneId.systemDefault())
+                    val date = Instant.ofEpochMilli(millis)
+                        .atZone(ZoneOffset.UTC)
                         .toLocalDate()
                     onDateSelected(date)
                 }
