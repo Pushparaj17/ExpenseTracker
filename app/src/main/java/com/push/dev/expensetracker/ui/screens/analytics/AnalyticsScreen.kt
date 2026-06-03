@@ -120,7 +120,7 @@ private fun MonthlySummarySection(
     ) {
         SummaryCard(
             title = "Total Spent",
-            value = "₹${String.format("%.2f", summary.totalSpending)}",
+            value = "$${String.format("%.2f", summary.totalSpending)}",
             modifier = Modifier.weight(1f)
         )
         SummaryCard(
@@ -137,7 +137,7 @@ private fun MonthlySummarySection(
     ) {
         SummaryCard(
             title = "Daily Average",
-            value = "₹${String.format("%.2f", summary.averageDailySpending)}",
+            value = "$${String.format("%.2f", summary.averageDailySpending)}",
             containerColor = MaterialTheme.colorScheme.secondaryContainer,
             modifier = Modifier.weight(1f)
         )
@@ -145,7 +145,7 @@ private fun MonthlySummarySection(
             title = "Top Category",
             value = summary.highestCategory?.let { "${it.emoji} ${it.displayName}" } ?: "—",
             subtitle = summary.highestCategory?.let {
-                "₹${String.format("%.2f", summary.highestCategoryAmount)}"
+                "$${String.format("%.2f", summary.highestCategoryAmount)}"
             },
             containerColor = MaterialTheme.colorScheme.errorContainer,
             modifier = Modifier.weight(1f)

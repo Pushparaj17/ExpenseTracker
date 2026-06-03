@@ -82,7 +82,7 @@ fun BarChart(
 
         // Y-axis label (max value)
         drawContext.canvas.nativeCanvas.drawText(
-            "₹${String.format("%.0f", maxValue)}",
+            "$${String.format("%.0f", maxValue)}",
             0f,
             chartTop + 10f,
             textPaint.apply {

@@ -103,7 +103,7 @@ fun AddEditExpenseScreen(
             OutlinedTextField(
                 value = state.amount,
                 onValueChange = { viewModel.onAmountChange(it) },
-                label = { Text("Amount (₹) *") },
+                label = { Text("Amount ($) *") },
                 placeholder = { Text("0.00") },
                 isError = state.amountError != null,
                 supportingText = state.amountError?.let { { Text(it) } },

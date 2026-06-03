@@ -42,7 +42,7 @@ fun DashboardScreen(
                 OutlinedTextField(
                     value = budgetInput,
                     onValueChange = { budgetInput = it },
-                    label = { Text("Budget Amount (₹)") },
+                    label = { Text("Budget Amount ($)") },
                     singleLine = true
                 )
             },
@@ -91,7 +91,7 @@ fun DashboardScreen(
                         Text("⚠️", style = MaterialTheme.typography.titleMedium)
                         Spacer(modifier = Modifier.width(8.dp))
                         Text(
-                            text = "Budget exceeded! ₹${String.format("%.2f", state.monthlySummary.totalSpending)} / ₹${String.format("%.2f", state.monthlySummary.budgetLimit)}",
+                            text = "Budget exceeded! $${String.format("%.2f", state.monthlySummary.totalSpending)} / $${String.format("%.2f", state.monthlySummary.budgetLimit)}",
                             style = MaterialTheme.typography.bodyMedium,
                             color = MaterialTheme.colorScheme.onErrorContainer
                         )
@@ -108,13 +108,13 @@ fun DashboardScreen(
             ) {
                 SummaryCard(
                     title = "This Month",
-                    value = "₹${String.format("%.2f", state.monthlyTotal)}",
+                    value = "$${String.format("%.2f", state.monthlyTotal)}",
                     subtitle = "${state.monthlySummary.transactionCount} transactions",
                     modifier = Modifier.weight(1f)
                 )
                 SummaryCard(
                     title = "Daily Avg",
-                    value = "₹${String.format("%.2f", state.monthlySummary.averageDailySpending)}",
+                    value = "$${String.format("%.2f", state.monthlySummary.averageDailySpending)}",
                     subtitle = "per day",
                     containerColor = MaterialTheme.colorScheme.secondaryContainer,
                     modifier = Modifier.weight(1f)
@@ -226,11 +226,11 @@ private fun BudgetProgressCard(
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Text(
-                    "₹${String.format("%.2f", spent)} spent",
+                    "$${String.format("%.2f", spent)} spent",
                     style = MaterialTheme.typography.bodySmall
                 )
                 Text(
-                    "₹${String.format("%.2f", budget)} budget",
+                    "$${String.format("%.2f", budget)} budget",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

@@ -91,7 +91,7 @@ fun ExpenseCard(
 
             Column(horizontalAlignment = Alignment.End) {
                 Text(
-                    text = "₹${String.format("%.2f", expense.amount)}",
+                    text = "$${String.format("%.2f", expense.amount)}",
                     style = MaterialTheme.typography.titleMedium,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.primary
@@ -252,7 +252,7 @@ fun CategoryLegendItem(
             modifier = Modifier.padding(end = 8.dp)
         )
         Text(
-            text = "₹${String.format("%.2f", amount)}",
+            text = "$${String.format("%.2f", amount)}",
             style = MaterialTheme.typography.bodyMedium,
             fontWeight = FontWeight.SemiBold
         )

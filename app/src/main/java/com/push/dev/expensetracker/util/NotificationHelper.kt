@@ -29,7 +29,7 @@ object NotificationHelper {
             .setSmallIcon(R.mipmap.ic_launcher)
             .setContentTitle("Budget Alert!")
             .setContentText(
-                "You've spent ₹${String.format("%.2f", spent)} of your ₹${String.format("%.2f", budget)} budget."
+                "You've spent $${String.format("%.2f", spent)} of your $${String.format("%.2f", budget)} budget."
             )
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
             .setAutoCancel(true)
